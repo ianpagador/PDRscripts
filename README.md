@@ -1,6 +1,6 @@
 # PDRscripts
 
-## All of my completed scripts as a PDR IT intern (with sensitive/confidential information redacted).
+All of my completed scripts as a PDR IT intern (with sensitive/confidential information redacted).
 
 ## move_min.py
 Moves court documents from a directory with subfolders partitioned by month to their respective folder formatted as follows: FIRSTNAME-LASTNAME-COURTNO. Utilizes a SQL server to find full name information based on court document titles.
