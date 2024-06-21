@@ -168,6 +168,7 @@ def concatenate(text):
         chunk.strip()
     text_str = ''.join(repr(text_split))
     line = 3
+    index = 10
     try:
         while line < len(text_split):
             if text_split[line][-1:] == ' ':
@@ -175,10 +176,12 @@ def concatenate(text):
                 line += 1
             else:
                 curr = text_split[line]
-            index = 10
             if curr in main_classes:
                 index = main_classes.index(curr)
+                if body_content[index] != '':
+                    body_content[index] += ' | '
                 body_content[index] += text_split[line + 1]
+                line += 1
             else:
                 body_content[index] += curr
             line += 1
