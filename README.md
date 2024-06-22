@@ -13,7 +13,7 @@ Moves court documents from a directory with subfolders partitioned by month to t
 | 3      |  10,599  |  63 minutes  |
 
 ## scrape.py
-Reads through court documents from locations provided through a "Court Minutes" Excel document using PyMuPDF. Every document contains a table with 10 categories, and most have an additional table which displays offenses. Following the first two tables is a log of additional classifications which vary with each document. These entries are appended to the SQL call for the main table. \\
+Reads through court documents from locations provided through a "Court Minutes" Excel document using PyMuPDF. Every document contains a table with 10 categories, and most have an additional table which displays offenses. Following the first two tables is a log of additional classifications which vary with each document. These entries are appended to the SQL call for the main table. \
 This program scrapes values for each of these categories and stores them on two tables pd_minute_orders and pd_minute_order_counts with different structures on a SQL server using PyMSSQL.
 
 ### Test runtimes
